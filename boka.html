@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boka Rum</title>
+</head>
+<body class="boka-body">
+    <header>
+        <img class="header-icon" src="assets/logo/bonz.ai-logo-white-landscape.png" alt="header-icon">
+    </header>
+
+    <nav>
+        <a href="index.html">Startsida</a> |
+        <a href="boka.html">Boka rum</a> |
+        <a href="faciliteter.html">Faciliteter</a> |
+        <a href="%">Kontakta oss</a> 
+    </nav>
+
+<main>
+
+    <section class="black-box-boka">
+        <h2 class="boka-h2">Boka ett rum</h2>
+        <form class="boka-form" action="bokningsprocess.php" method="post">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="check-in">Incheckningsdatum:</label>
+            <input type="date" id="check-in" name="check-in" required>
+    
+            <label for="check-out">Utcheckningsdatum:</label>
+            <input type="date" id="check-out" name="check-out" required>
+    
+            <label for="room-type">Rumstyp:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Enkelrum</option>
+                <option value="double">Dubbelrum</option>
+                <option value="suite">Penthouse babyyyyy</option>
+            </select>
+    
+                <button class="boka-button" type="submit">Boka rum</button>
+            </form>
+    </section>
+</main>
+
+    <footer class="footer">
+        <img class="footer-icon" src="assets/logo/logo-twitter.svg" alt="twitter">
+        <img class="footer-icon" src="assets/logo/logo-linkedin.svg" alt="linkedin">
+        <img class="footer-icon" src="assets/logo/logo-facebook.svg" alt="facebook">
+        <img class="footer-icon" src="assets/logo/logo-instagram.svg" alt="instagram">
+        <p>&copy; 2023 Bonz.ai Hotel</p>
+    </footer>
+</body>
+</html>
